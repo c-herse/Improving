@@ -29,7 +29,7 @@ class PageController extends Controller
         $json = json_decode($geolocationData, true)['postalCodes'];
 
         // Fallback to Kolding
-        if(empty($jon)) {
+        if(empty($json)) {
             $geolocationData = file_get_contents('http://api.geonames.org/postalCodeSearchJSON?username=raldian&placename=kolding');
             $json = json_decode($geolocationData, true)['postalCodes'];
             $flag = false;
