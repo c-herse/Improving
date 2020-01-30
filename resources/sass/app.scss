@@ -1,0 +1,11 @@
+$colours: #CFE8C8,#A8CFC2,#7CA8AB,#4F6C7B,#2C4356,#1F3040,#1A2733;
+
+.background{
+    background-color: #A3BE9D;
+}
+
+@each $colour in $colours{
+    .colour_#{index($colours, $colour)}{
+        background-color: $colour
+    }
+}
