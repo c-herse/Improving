@@ -1,7 +1,7 @@
 ## Om projektet
 
-Jeg har lavet backend vha. Laravel, da jeg har arbejdet meget i Laravel. ydermere, har jeg valgt Laravel fordi projektet nemmere kan skaleres.
-Jeg har ikke selv lavet designet, men jeg har brugt et gratis template fra [creative-tim](https://www.creative-tim.com). Jeg har dog prøvet at gøre det så flot som jeg kunne, uden at fokusere for meget på dette område.
+Jeg har lavet backend vha. Laravel, da jeg har arbejdet meget i Laravel. ydermere, har jeg valgt Laravel så projektet nemmere kan skaleres.
+Jeg har brugt et gratis template fra [creative-tim](https://www.creative-tim.com). Jeg har ikke fokusere på frontend delen af projektet men derimod backend delen.
 
 ## Opsætning
 
