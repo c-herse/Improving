@@ -28,7 +28,7 @@ For at teste localt kan følgende kommando udføres.
 ./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/Unit/
 ```
 
-### Forecasting tests
+### Unit tests
 
 Der bliver testet for om systemet gør det rigtige ved korekte og inkorekte bynavne.
 
