@@ -18,6 +18,21 @@ Kør projectet
 
 Herefter vil konsollen vise hvad for en local url projektet kører på.
 
+## Testing
+
+### Udførelse af tests
+
+For at teste localt kan følgende kommando udføres.
+
+```
+./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/Unit/
+```
+
+### Forecasting tests
+
+Der bliver testet for om systemet gør det rigtige ved korekte og inkorekte bynavne.
+
+
 ## Struktur
 
 | Funktion | Plasering |
@@ -25,6 +40,7 @@ Herefter vil konsollen vise hvad for en local url projektet kører på.
 | View Controller | app/Http/Controllers/PageController.php |
 | Forecast Helper | app/Helpers/Forecast.php |
 | Template | resources/views/welcome.blade.php |
+| Tests | tests/Unit/ |
 
 ## Built With
 
