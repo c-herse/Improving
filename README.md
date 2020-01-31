@@ -1,6 +1,6 @@
 # Improving PHP Test
 
-En web applikation til vising af solopgang og solnedgang i en givet by.
+Jeg har lavet backend vha. Laravel, da jeg har arbejdet meget i Laravel. ydermere, har jeg valgt Laravel så projektet nemmere kan skaleres. Jeg har brugt et gratis template fra [creative-tim](https://www.creative-tim.com). Jeg har ikke fokusere på front-end delen af projektet men, derimod back-end delen.
 
 ## Opsætning
 
