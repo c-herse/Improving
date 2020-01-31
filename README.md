@@ -1,16 +1,20 @@
-## Om projektet
+# Improving PHP Test
 
-Jeg har lavet backend vha. Laravel, da jeg har arbejdet meget i Laravel. ydermere, har jeg valgt Laravel så projektet nemmere kan skaleres.
-Jeg har brugt et gratis template fra [creative-tim](https://www.creative-tim.com). Jeg har ikke fokusere på front-end delen af projektet men, derimod back-end delen.
+En web applikation til vising af solopgang og solnedgang i en givet by.
 
 ## Opsætning
 
-1. Installer de krævede composer biblioteker
-- `composer install`
-2. Installer de krævede Node biblioteker
-- `npm install`
-3. Kør projectet
-- `php artisan serve`
+Installer de krævede composer biblioteker
+
+```composer install```
+
+Installer de krævede Node biblioteker
+
+```npm install```
+
+Kør projectet
+
+```php artisan serve```
 
 Herefter vil konsollen vise hvad for en local url projektet kører på.
 
@@ -21,6 +25,12 @@ Herefter vil konsollen vise hvad for en local url projektet kører på.
 | View Controller | app/Http/Controllers/PageController.php |
 | Forecast Helper | app/Helpers/Forecast.php |
 | Template | resources/views/welcome.blade.php |
+
+## Built With
+
+* [creative-tim](https://www.creative-tim.com)
+* [geonames](http://www.geonames.org)
+* [Laravel](https://laravel.com/)
 
 ## Fremgangsmåde
 
