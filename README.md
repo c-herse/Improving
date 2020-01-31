@@ -4,12 +4,25 @@ Jeg har lavet testen i Laravel da jeg har arbejdet meget i Laravel og derved ger
 
 Jeg har også valgt Laravel da projektet derved nemmere kan skaleres hvis behovet skulle opstå. Jeg har dog inskærmet mig i forhold til hvor stor en applikation jeg ville lave da mine første tanker omkring projektet var lidt for store i forhold til hvad for en opgave jeg blev sat på.
 
+## Opsætning
+
+1. Installer de krævede composer biblioteker
+- `composer install`
+2. Installer de krævede Node biblioteker
+- `npm install`
+3. Kør projectet
+- `php artisan serve`
+
+Herefter vil konsollen vise hvad for en local url projektet køre på.
+
 ## Struktur
 
 | Funktion | Plasering |
 | ----------- | ----------- |
 | View Controller | app/Http/Controllers/PageController.php |
+| Forecast Helper | app/Helpers/Forecast.php |
 | Template | resources/views/welcome.blade.php |
+| UnitTests | tests/ |
 
 ## Fremgangsmåde
 
