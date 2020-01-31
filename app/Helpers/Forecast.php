@@ -20,12 +20,12 @@ class Forecast{
      */
     public static function fetchGeolocationData(string $city){
         $flag = true;
-        $geolocationData = file_get_contents('http://api.geonames.org/postalCodeSearchJSON?username='.env('GEONAMES_USERNAME').'&placename='.$city);
+        $geolocationData = file_get_contents('http://api.geonames.org/postalCodeSearchJSON?username='.env('GEONAMES_USERNAME', 'raldian').'&placename='.$city);
         $json = json_decode($geolocationData, true)['postalCodes'];
 
         // Fallback to Kolding
         if(empty($json)) {
-            $geolocationData = file_get_contents('http://api.geonames.org/postalCodeSearchJSON?username='.env('GEONAMES_USERNAME').'&placename=kolding');
+            $geolocationData = file_get_contents('http://api.geonames.org/postalCodeSearchJSON?username='.env('GEONAMES_USERNAME', 'raldian').'&placename=kolding');
             $json = json_decode($geolocationData, true)['postalCodes'];
             $flag = false;
         }
@@ -34,7 +34,7 @@ class Forecast{
         $data = $json[$key];
         $data['status'] = $flag;
 
-        $timezoneData = file_get_contents("http://api.geonames.org/timezoneJSON?lat={$data['lat']}&lng={$data['lng']}&username=".env('GEONAMES_USERNAME'));
+        $timezoneData = file_get_contents("http://api.geonames.org/timezoneJSON?lat={$data['lat']}&lng={$data['lng']}&username=".env('GEONAMES_USERNAME', 'raldian'));
         $timezoneData = json_decode($timezoneData, true);
 
         return array_merge($data, $timezoneData);
